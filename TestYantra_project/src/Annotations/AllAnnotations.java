@@ -16,7 +16,7 @@ public class AllAnnotations {
 	
 	@BeforeSuite
 	public void testS1() {
-		Reporter.log("suite",true);
+		Reporter.log("suite",true);//gdydtdhfutdf
 	}
 	@BeforeTest
 	public void testStart() {
