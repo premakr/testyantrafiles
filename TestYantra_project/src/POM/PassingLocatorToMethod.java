@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
 public class PassingLocatorToMethod {
+	
+	
 	public static WebElement locatorValue(String locator,String value,WebDriver driver) {
 		if(locator.equals("id")) 
 		    return driver.findElement(By.id(value));
