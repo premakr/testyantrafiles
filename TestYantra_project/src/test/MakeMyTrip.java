@@ -60,6 +60,6 @@ public class MakeMyTrip {
 	       driver.findElement(By.xpath("//div[@class='dateFilterReturn hasDatepicker']/descendant::div[@class='ui-datepicker-group ui-datepicker-group-last']/table/tbody/descendant::td[@data-handler='selectDay']/a[text()='"+adate+"']")).click();
 	       driver.findElement(By.id("searchBtn")).click();
 	}
-	         
+ 	         
 	}
 

@@ -71,7 +71,7 @@ public class UrbanLadder {
 				Workbook f; 
 				try {
 					f = WorkbookFactory.create(new FileInputStream(path));
-					f.getSheet(sheetName).createRow(row).createCell(cell).setCellValue(" ");
+					f.getSheet(sheetName).createRow(row).createCell(cell);
 					f.getSheet(sheetName).getRow(row).getCell(cell).setCellValue(value);
 					f.write(new FileOutputStream(path));
 					
@@ -80,4 +80,4 @@ public class UrbanLadder {
 					e.printStackTrace();
 			}	
 		}
-	}
+	}   
