@@ -18,7 +18,7 @@ public class Amazon {
 		driver1.manage().window().maximize();
 		driver1.get("https://www.amazon.in/");
 		Actions action = new Actions(driver1);
-		driver1.navigate().to("");
+		driver1.navigate().to("");//from eclipse
 		
 		WebElement item = driver1.findElement(By.xpath("//div[@class='a-cardui fat-image-link card-lite']/descendant::img[@alt='Amazon Echo']"));
 		action.moveToElement(item).perform();
