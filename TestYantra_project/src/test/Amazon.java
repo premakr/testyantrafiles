@@ -13,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 public class Amazon {
 
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver1 = new ChromeDriver();
+		WebDriver driver1 = new ChromeDriver();//from git
 		driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver1.manage().window().maximize();
 		driver1.get("https://www.amazon.in/");
@@ -37,7 +37,7 @@ public class Amazon {
 		String producttxt = driver1.findElement(By.xpath("//div[@id='titleSection']/descendant::span[@id='productTitle']")).getText();
 		System.out.println(producttxt);
 		driver1.findElement(By.xpath("//input[contains(@title,'Add to Shopping Cart')]")).submit();
-		String producttxt1 = driver1.findElement(By.xpath("//div/a[@title='All-new Echo Plus (2nd gen) – Premium sound with a built-in smart home hub-Black']")).getAttribute("title");
+		String producttxt1 = driver1.findElement(By.xpath("//div/a[@title='All-new Echo Plus (2nd gen) â€“ Premium sound with a built-in smart home hub-Black']")).getAttribute("title");
 		System.out.println(producttxt1);
 		if(producttxt.contains(producttxt1)) {
 			System.out.println("same title validated");
